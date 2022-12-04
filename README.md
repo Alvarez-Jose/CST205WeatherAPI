@@ -21,4 +21,4 @@ This project allows you search the current weather in different cites, which out
 
 
 <br>
-<blockquote class="imgur-embed-pub" lang="en" data-id="a/kfToFd0" data-context="false" ><a href="//imgur.com/a/kfToFd0"></a></blockquote><script async src="//s.imgur.com/min/embed.js" charset="utf-8"></script>
+![](https://imgur.com/a/kfToFd0 | width=100)
