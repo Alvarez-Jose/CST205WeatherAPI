@@ -21,4 +21,5 @@ This project allows you search the current weather in different cites, which out
 
 
 <br>
-<iframe src="https://giphy.com/embed/jLT3IzXG9PnedPYI36" width="480" height="230" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/jLT3IzXG9PnedPYI36">via GIPHY</a></p>
+
+![ezgif com-gif-maker](https://user-images.githubusercontent.com/48456756/205522785-72b93b7e-6b9e-45e3-be44-e8781f83a504.gif)
