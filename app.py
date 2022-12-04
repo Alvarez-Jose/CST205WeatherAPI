@@ -1,6 +1,5 @@
 import json
 import requests
-from fpdf import FPDF
 from flask import Flask,request,render_template
 
 #API obtained from https://rapidapi.com/weatherapi/api/weatherapi-com/
@@ -30,6 +29,7 @@ def Current_Weather():
             response = requests.request("GET", url, headers=headers, params=querystring)
             json_data = json.loads(response.text)
             
+            #Functuons defined
             name = json_data['location']['name']
             region = json_data['location']['region']
             country = json_data['location']['country']
