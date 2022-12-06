@@ -1,7 +1,7 @@
 # CST205 Weather Forcast Project
 # Team : Jose Alvarez (S0l0 project)
 # Class: CST205
-# Date: 12/04/2022
+# Date: 12/06/2022
 # Total hours on this project: 9
 <br>
 
@@ -27,7 +27,8 @@ Update! added air quality now.
 # Future work 
 possibility of adding auto location with user premissions. 
 
-# testing the air quality changes the list is in order from good to hazadous. Information from the countries are obtain from here https://www.iqair.com/us/world-air-quality-ranking
+# Testing the air Quality 
+To test the air quality below is the list. The list is in order from good to hazadous. Information from the countries are obtain from here https://www.iqair.com/us/world-air-quality-ranking
 1. Sydney, Australia
 2. Chiang Mai, Thailand
 3. Poznan, Poland
