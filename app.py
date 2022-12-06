@@ -63,15 +63,15 @@ def Current_Weather():
             gust_mph = json_data['current']['gust_mph']
             gust_kph = json_data['current']['gust_kph']
             #air quailty added
-            air_quality = json_data['current']['air_quality']
-
+            #air_quality = json_data['current']['air_quality']
+            us_epa_index  = json_data['current']['air_quality']['us-epa-index']
             
             return render_template('home.html',name=name,region=region,country=country,lat=lat,lon=lon,tz_id=tz_id,
             localtime_epoch=localtime_epoch,localtime=localtime,last_updated_epoch=last_updated_epoch,last_updated=last_updated,
             temp_c=temp_c,temp_f=temp_f,is_day=is_day,condition_text=condition_text,condition_icon=condition_icon,wind_mph=wind_mph,
             wind_kph=wind_kph,wind_degree=wind_degree,wind_dir=wind_dir,pressure_mb=pressure_mb,pressure_in=pressure_in,precip_mm=precip_mm,
             precip_in=precip_in,humidity=humidity,cloud=cloud,feelslike_c=feelslike_c,feelslike_f=feelslike_f,vis_km=vis_km,
-            vis_miles=vis_miles,uv=uv,gust_mph=gust_mph,gust_kph=gust_kph,air_quality=air_quality)
+            vis_miles=vis_miles,uv=uv,gust_mph=gust_mph,gust_kph=gust_kph, us_epa_index = us_epa_index)
         except:
             return render_template('home.html',error='Please double check for correct grammer on location!')
 if __name__ == '__main__':
