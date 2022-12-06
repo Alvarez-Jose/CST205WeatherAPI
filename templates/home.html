@@ -91,8 +91,21 @@
         <div class="row text-center" style="margin-top: 20px;">
             <div class="details col">
                 <p>Air Quality: {{ us_epa_index }}</p>
-            </div>
-            <!-- TODO add more details to separate air quality here -->
+                <!--TODO-->
+            {% if us_epa_index == 1 %}
+                <p>Air is Good </p>
+            {% elif us_epa_index == 2 %}
+                <p> Air is Moderate </p>
+            {% elif us_epa_index == 3 %}
+                <p> Air is Unhealthy for sensitive groups </p>
+            {% elif us_epa_index == 4 %}
+                <p> Air is Unhealthy </p>
+            {% elif us_epa_index == 5 %}
+                <p> Air is very Unhealthy </p>
+            {% elif us_epa_index == 6 %}
+                <p>Air is Hazardous</p>
+            {% endif %}
+            </div>            
         </div>
     </div>
     {% endif %}
