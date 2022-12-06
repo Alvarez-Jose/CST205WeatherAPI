@@ -19,6 +19,7 @@ def Current_Weather():
         #required Parameters
         q = request.form['location']
         url = API_URL
+        #passing air quality param
         querystring = {"q":q, "aqi":"yes"}
         headers = {
             #API obtained from https://rapidapi.com/weatherapi/api/weatherapi-com/
@@ -30,6 +31,8 @@ def Current_Weather():
             json_data = json.loads(response.text)
 
             #Functuons defined
+            #Deleting one functions seems to break the code..... 
+            #figure out the issue.
             name = json_data['location']['name']
             region = json_data['location']['region']
             country = json_data['location']['country']
