@@ -19,7 +19,7 @@ def Current_Weather():
         #required Parameters
         q = request.form['location']
         url = API_URL
-        querystring = {"q":q}
+        querystring = {"q":q, "aqi":"yes"}
         headers = {
             #API obtained from https://rapidapi.com/weatherapi/api/weatherapi-com/
             "X-RapidAPI-Key": '639d5a3a72mshb13d9f56407907cp145657jsnc702ab4e4823',
@@ -28,7 +28,7 @@ def Current_Weather():
         try:
             response = requests.request("GET", url, headers=headers, params=querystring)
             json_data = json.loads(response.text)
-            
+
             #Functuons defined
             name = json_data['location']['name']
             region = json_data['location']['region']
@@ -62,13 +62,16 @@ def Current_Weather():
             uv = json_data['current']['uv']
             gust_mph = json_data['current']['gust_mph']
             gust_kph = json_data['current']['gust_kph']
+            #air quailty added
+            air_quality = json_data['current']['air_quality']
+
             
             return render_template('home.html',name=name,region=region,country=country,lat=lat,lon=lon,tz_id=tz_id,
             localtime_epoch=localtime_epoch,localtime=localtime,last_updated_epoch=last_updated_epoch,last_updated=last_updated,
             temp_c=temp_c,temp_f=temp_f,is_day=is_day,condition_text=condition_text,condition_icon=condition_icon,wind_mph=wind_mph,
             wind_kph=wind_kph,wind_degree=wind_degree,wind_dir=wind_dir,pressure_mb=pressure_mb,pressure_in=pressure_in,precip_mm=precip_mm,
             precip_in=precip_in,humidity=humidity,cloud=cloud,feelslike_c=feelslike_c,feelslike_f=feelslike_f,vis_km=vis_km,
-            vis_miles=vis_miles,uv=uv,gust_mph=gust_mph,gust_kph=gust_kph)
+            vis_miles=vis_miles,uv=uv,gust_mph=gust_mph,gust_kph=gust_kph,air_quality=air_quality)
         except:
             return render_template('home.html',error='Please double check for correct grammer on location!')
 if __name__ == '__main__':
