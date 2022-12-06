@@ -3,6 +3,7 @@
 # Class: CST205
 # Date: 12/06/2022
 # Total hours on this project: 9
+# references and help received from: https://github.com/weatherapicom/python 
 <br>
 
 # Issues found 
@@ -18,7 +19,8 @@ You should be able to run the application with needing to imput any commands in 
 
 # Project Description 
 This project allows you search the current weather in different cites, which output the following: Region, Condition, Wind, Wind Direction, Pressure, precipitation, Humidity, Feels like, Visbility, Gust mph. To search accurately for certain places inputs like these will help: Santa Cruz, California or Marina, California. Project does consist of instyle css and majority of Bootstrap.
-Update! added air quality now. 
+
+- <u> Update! added air quality now. <u>
 
 <br>
 
