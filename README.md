@@ -3,7 +3,8 @@
 # Class: CST205
 # Date: 12/06/2022
 # Total hours on this project: 9
-# references and help received from: https://github.com/weatherapicom/python 
+# references and help received from: https://github.com/weatherapicom/python
+# link to Github : https://github.com/Alvarez-Jose/CST205WeatherAPI.git
 <br>
 
 # Issues found 
